@@ -1,0 +1,33 @@
+#pragma once
+
+#define I2C_SDA 22
+#define I2C_SCL 23
+#define LED_PIN 15
+#define LED_STATE_ON 0
+#define BUTTON_PIN 9
+
+#define HAS_GPS 1
+#define GPS_RX_PIN 17
+#define GPS_TX_PIN 16
+#define GPS_BAUDRATE 115200
+
+#define USE_SX1262
+#ifndef USERPREFS_LORACONFIG_TX_POWER
+#define USERPREFS_LORACONFIG_TX_POWER 18
+#endif
+#define LORA_SCK 19
+#define LORA_MISO 20
+#define LORA_MOSI 18
+#define LORA_CS 21
+#define LORA_RESET 1
+#define LORA_DIO1 0
+#define SX126X_CS LORA_CS
+#define SX126X_RESET LORA_RESET
+#define SX126X_DIO1 LORA_DIO1
+#define SX126X_BUSY 2
+#define SX126X_DIO2_AS_RF_SWITCH
+#define SX126X_DIO3_TCXO_VOLTAGE 1.8
+
+#ifndef USE_XIAO_ESP32C6_EXTERNAL_ANTENNA
+#define USE_XIAO_ESP32C6_EXTERNAL_ANTENNA 0
+#endif
